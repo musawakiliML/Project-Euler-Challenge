@@ -38,7 +38,7 @@ def Fibonacci_even(n):
         while j < n:
             #if (Fibonacci_even(i-1) + Fibonacci_even(i-2)) % 2 == 0:
                 #even_values = even_values + (Fibonacci_even(i-1) + Fibonacci_even(i-2))
-            print((Fibonacci_even(n-1) + Fibonacci_even(n-2)))
+            (Fibonacci_even(n-1) + Fibonacci_even(n-2)
             j += 1
 
 Fibonacci_even(10)
