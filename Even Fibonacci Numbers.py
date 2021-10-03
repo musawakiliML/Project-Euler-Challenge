@@ -7,12 +7,13 @@ By starting with 1 and 2, the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 find the sum of the even-valued terms.
 '''
-a = 1
-b = 2
-counter = 0
-fib = 0
 
-while counter < 10:
-    fib = fib + a + b
+def Fibonacci(n):
 
-    counter += 1 
+    f = [0, 1]
+
+    for i in range(2, n+1):
+        f.append(f[i-1] + f[i-2])
+    return f[n]
+
+print(Fibonacci(9))
