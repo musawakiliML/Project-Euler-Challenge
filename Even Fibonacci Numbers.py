@@ -8,7 +8,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 find the sum of the even-valued terms.
 '''
 
-'''
+
 def Fibonacci_even_valued_terms(n):
 
     f = [0, 1]
@@ -16,14 +16,13 @@ def Fibonacci_even_valued_terms(n):
 
 
     for i in range(2, n+1):
-        f.append(f[i-1] + f[i-2])
-        if f[i] % 2 == 0:
-            even_values = even_values + f[i]
-
+        #f.append(f[i-1] + f[i-2])
+        if (f(i-1) + f(i-2)) % 2 == 0:
+            even_values = even_values + (f(i-1) + f(i-2))
     return even_values
-print(Fibonacci_even_valued_terms(10))
-'''
+print(Fibonacci_even_valued_terms(20))
 
+'''
 def Fibonacci_even(n):
     even_values = 0
 
@@ -42,3 +41,4 @@ def Fibonacci_even(n):
             j += 1
 
 Fibonacci_even(10)
+'''
